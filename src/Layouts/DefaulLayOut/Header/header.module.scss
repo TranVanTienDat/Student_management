@@ -1,0 +1,114 @@
+.header {
+  height: 56px;
+  background-color: var(--white-color);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  border-bottom: 1px solid #d7d9de;
+
+  .inner {
+    width: 1150px;
+    height: 100%;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex: 1;
+      .logo {
+        cursor: pointer;
+        .logo-img {
+        }
+      }
+      .menu-icon {
+        padding: 12px 14px;
+        border-radius: 10px;
+        cursor: pointer;
+        color: var(--white-color);
+        background-color: #3d5ee1;
+      }
+
+      .search {
+        position: relative;
+        border-radius: 6px;
+        cursor: pointer;
+        background-color: #f5f5f5;
+        border: 1px solid #d7d9de;
+        .input {
+          background-color: transparent;
+          font-size: 1.6rem;
+          margin-left: 24px;
+          padding: 8px;
+        }
+        .icon {
+          position: absolute;
+          top: 50%;
+          left: 6px;
+          transform: translateY(-50%);
+          font-size: 1.8rem;
+          font-family: 'Roboto';
+          color: var(--light-color);
+        }
+      }
+    }
+    .action {
+      flex: 1;
+      .user {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .message {
+          margin-right: 20px;
+          cursor: pointer;
+          .message-icon {
+            padding: 14px;
+            border-radius: 50%;
+            background-color: #f7f7fa;
+          }
+        }
+
+        // tippy
+        .menu__user {
+          background-color: var(--white-color);
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+            rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+          animation: top linear 0.3s;
+          .menu__item {
+            list-style: none;
+            padding: 10px;
+            cursor: pointer;
+
+            & .menu__icon {
+              margin-right: 8px;
+            }
+            &:hover {
+              background-color: rgba(219, 40, 40, 0.3);
+            }
+          }
+        }
+
+        @keyframes top {
+          from {
+            height: 0;
+          }
+          to {
+            height: 100%;
+          }
+        }
+        .user-avatar {
+          width: 48px;
+          border-radius: 50%;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}

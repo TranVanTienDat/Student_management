@@ -1,0 +1,33 @@
+// style Card.js
+.wrapper {
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 12px;
+  padding: 20px;
+  border-radius: 8px;
+  .data {
+    margin-right: 22px;
+    .title {
+      font-size: 1.4rem;
+      margin: 5px 0;
+      font-weight: 300;
+      color: #808191;
+    }
+    .number {
+      margin: 5px 0;
+      font-size: 2.2rem;
+      font-weight: 550;
+    }
+  }
+  .avatar {
+    width: 58px;
+    border-radius: 3px;
+    margin-left: 22px;
+    background-color: #edf4ff;
+  }
+}
+
+// style MenuCard.js

@@ -1,0 +1,14 @@
+.wrapper {
+  background-color: #f7f7fa;
+  padding: 0 5px;
+  .chart {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .demo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
